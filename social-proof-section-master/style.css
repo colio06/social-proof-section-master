@@ -1,0 +1,172 @@
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: League Spartan;
+      }
+      body {
+        margin: 200px;
+      }
+
+      .preview-text {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+      .text {
+        text-align: left;
+        width: 50%;
+
+        h1 {
+          width: 400px;
+          margin: 30px 0px;
+          color: hsl(300, 43%, 22%);
+          font-size: 50px;
+        }
+        p {
+          margin: 30px 0px;
+          width: 400px;
+          color: rgb(103, 101, 101);
+          line-height: 1.5;
+        }
+      }
+      .preview-blocks {
+        width: 50%;
+        margin: 50px 0px;
+      }
+      .preview-blocks div {
+        padding: 10px;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 10px;
+        width: 350px;
+        p {
+          color: hsl(300, 43%, 22%);
+          font-weight: 500;
+        }
+      }
+      .block1 {
+        margin: 0px 0px 10px -20px;
+      }
+      .block2 {
+        margin: 0px 0px 10px 0px;
+      }
+      .block3 {
+        margin: 0px 0px 10px 20px;
+      }
+
+      /* larger blocks section */
+      .lg-blocks {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        div {
+          width: 33.3%;
+          text-align: left;
+          background-color: hsl(300, 43%, 22%);
+          border-radius: 10px;
+          padding: 45px;
+          height: fit-content;
+          h3 {
+            color: white;
+            padding-bottom: 5px;
+          }
+          h4 {
+            color: hsl(333, 80%, 67%);
+            padding-bottom: 10px;
+          }
+          p {
+            color: white;
+          }
+        }
+        .lg-block1 {
+          margin: 0px 30px 0px 0px;
+          padding: 40px;
+          p {
+            line-height: 1.5;
+            margin-top: 10px;
+          }
+        }
+        .lg-block2 {
+          margin: 15px 30px 0px 0px;
+          padding: 40px;
+          p {
+            line-height: 1.5;
+            margin-top: 10px;
+          }
+        }
+        .lg-block3 {
+          margin: 30px 30px 0px 0px;
+          padding: 40px;
+          p {
+            line-height: 1.5;
+            margin-top: 10px;
+          }
+        }
+        span {
+          float: left;
+          margin-right: 20px;
+        }
+        span img {
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      @media screen and (max-width: 377px) {
+        body {
+          margin: 18px;
+        }
+        .preview-text {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        }
+        .text {
+          padding: 0px;
+          
+          h1 {
+            font-size:38px;
+            width: 300px;
+            padding: 0px 15px;
+            text-align-last: center;
+          }
+
+          p {
+            width: 290px;
+            text-align-last: center;
+          }
+        }
+        .preview-blocks {
+          width: 50%;
+          justify-self: center;
+        }
+        .preview-blocks div {
+          width: 300px;
+          margin: 10px auto;
+          span {
+            display: block;
+            margin:15px 0px 15px 25px;
+          }
+          p {
+            padding:0px 0px 0px 50px;
+            font-weight: 700;
+          }
+        }
+        .lg-blocks {
+          display: flex;
+          flex-direction: column;
+          justify-self: center;
+        }
+      }
+      .lg-blocks div {
+        width: 310px;
+        border-radius: 5px;
+      }
